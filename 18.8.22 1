@@ -1,0 +1,24 @@
+#include <stdio.h>    
+void main()    
+{    
+    int a[] = {1,2,4,7,8,3};     
+    int len = sizeof(a)/sizeof(int);   
+    int i, j, flag=0;
+    for(i=0;i<len;i++) 
+    {    
+        for(j=i+1;j<len;j++) 
+        {    
+            if(a[i]==a[j])    
+            {
+                flag=1;
+            }    
+        }    
+    }
+    if(flag==0)
+    printf("\nUNIQUE");
+    else
+    printf("\nDUPLICATE");
+}  
+
+Output
+UNIQUE
