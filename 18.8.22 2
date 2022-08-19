@@ -1,0 +1,25 @@
+//sum of factorial values
+#include<stdio.h>
+void main()
+{
+   int a[]={3,4,5,7,8};
+	int len=sizeof(a)/sizeof(int);
+	int i, j,sum=0, f=1;
+	
+	for(i=0;i<len;i++) 
+	{
+        j=1;
+        f=1;
+	  while(j<=a[i])
+	  {
+	     f=f*j;
+	     j++;
+	  }
+	        sum=sum+f;
+	}
+	
+	printf("\nthe sum of Factorial values = %d",sum);
+}
+
+Output
+the sum of Factorial values = 45510
